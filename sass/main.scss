@@ -1,3 +1,6 @@
+@import "./utils/vars";
+@import "./utils/hidden";
+@import "./utils/mixin";
 @import "./layout/header";
 @import "./layout/nav";
 @import "./layout/contact";
@@ -22,5 +25,3 @@
 
 @import "./base/reset";
 
-@import "./utils/vars";
-@import "./utils/hidden";

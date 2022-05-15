@@ -14,10 +14,11 @@
 .logo {
     color:var(--logo-color); 
     font-family: Raleway,sans-serif;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
+    @include font(26px,1.19,700,0.03em);
+    // font-size: 26px;
+    // font-weight: 700;
+    // line-height: 1.19;
+    // letter-spacing: 0.03em;
     .accent{
         color:var(--accent-color);
     }
