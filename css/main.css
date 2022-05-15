@@ -238,7 +238,7 @@ img{
 
 }
 
-.hero-title {
+.hero__title {
     width: 696px;
     margin-top: 0;
     margin-bottom: 30px;
@@ -265,11 +265,11 @@ img{
     margin-right: 30px;
 }
 
-.principles-item{
+.principles__item{
     width: 270px;
 }
 
-.principles-item::before{
+.principles__item::before{
     display: block;
     content: "";
     height: 120px;
@@ -310,7 +310,7 @@ img{
     margin: -1px;
 }
 
-.principles .title {
+.principles__title {
     margin-top: 0;
     margin-bottom: 10px;
 
@@ -323,7 +323,7 @@ img{
     text-transform: uppercase;
 }
 
-.principles .text {
+.principles__text {
     margin-top: 0;
     margin-bottom: 0;
 
@@ -334,7 +334,6 @@ img{
 }
 
 
-
 /* Section */
 .section{
     padding: 94px 0;
@@ -343,7 +342,7 @@ img{
     padding-bottom: 94px;
 }
 
-.section-title{
+.section__title{
     margin-bottom: 50px;
     
     color:var( --title-text-color) ;
@@ -355,19 +354,20 @@ img{
     letter-spacing: 0.03em;
 }
 
-.work-list{
+
+.work{
     display: flex;
 }
 
-.section-item:not(:last-child) {
+.work__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.doing{
+.work__doing{
     position: relative;
 }
 
-.doing-thumb{
+.work__thumb{
     position: absolute;
     width: 370px;
     height: 70px;
@@ -377,7 +377,7 @@ img{
 
 }
 
-.text-doing{
+.work__text{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -393,8 +393,10 @@ img{
 
 }
 
+
+
 /* Team */
-.section-team{
+/* .section-team{
     margin-bottom: 50px;
     /* padding-top: 94px; */
     
@@ -405,7 +407,7 @@ img{
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-}
+} */
 
 .section-group{
     padding: 94px 0;
@@ -413,21 +415,22 @@ img{
 
     background-color:var(--second-fon-color);
 }
+
 .team {
     display: flex;
 }
 
-.team-item:not(:last-child) {
+.team__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.team-item{
+.team__item{
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     
     background: #FFFFFF;
 }
-.team .title {
+.team__title {
     /* margin-top: 30px; */
     margin-bottom: 10px;
 
@@ -440,7 +443,7 @@ img{
     letter-spacing: 0.03em;
 }
 
-.team .text {
+.team__text {
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 400;
@@ -451,19 +454,19 @@ img{
     margin-bottom: 16px;
 }
 
-.team-desc {
+.team__desc {
     background: #FFFFFF;
     padding: 30px 0;
     text-align: center;
 
 }
 
-.team-soc-list {
+.soc__list {
     display: flex;
     justify-content: center;
 }
 
-.team-soc-link{
+.soc__link{
     width: 44px;
     height: 44px;
     background-color: var(--primary-white-color);
@@ -476,16 +479,16 @@ img{
     transition: background-color 250ms cubic-bezier(0.4,0,0.2,1),color 250ms cubic-bezier(0.4,0,0.2,1);
 }
 
-.team-soc-item + .team-soc-item{
+.soc__item + .soc__item{
     margin-left: 10px;
 }
 
- .team-soc-icon{
+ .soc__icon{
     fill: currentColor;
 }
 
-.team-soc-link:hover,
-.team-soc-link:focus {
+.soc__link:hover,
+.soc__link:focus {
     background-color: var(--accent-color);
     color: var(--primary-white-color);
 
@@ -502,7 +505,7 @@ img{
     background-color: #FFFFFF;
 }
 
-.section-client-title{
+/* .section-client-title{
     margin-bottom: 50px;
     /* padding-top: 94px; */  
     color:var( --title-text-color) ;
@@ -512,7 +515,7 @@ img{
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-}
+} */
 
 /* .client-border{
     background-color: #E5E5E5;
@@ -526,7 +529,7 @@ img{
 } 
 
 
-.clients-list{
+.clients__list{
     display: flex;
     justify-content: center;
 
@@ -535,7 +538,7 @@ img{
     list-style: none;
 }
 
-.client-link{
+.client__link{
     margin: 0;
     padding: 0;
     width: 170px;
@@ -554,9 +557,9 @@ img{
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-link:active,
-.client-link:hover,
-.client-link:focus{
+.client__link:active,
+.client__link:hover,
+.client__link:focus{
 
     fill: var(--accent-color);
     border: 1px solid var(--accent-color);
@@ -564,7 +567,7 @@ img{
     border-radius: 4px;
 }
 
-.client-item:not(:last-child){
+.client__item:not(:last-child){
     margin-right: 30px;
 }
 
