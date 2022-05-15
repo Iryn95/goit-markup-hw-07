@@ -18,12 +18,18 @@
     cursor: pointer;
 
     transition: color 250ms cubic-bezier(0.4,0,0.2,1);
+
+    &:hover,
+    &:focus{
+    color: var(--accent-color);
+    fill: var(--accent-color);
+    }
 }
 
-.contact-list__link:hover,
-.contact-list__link:focus {
-    color:var(--accent-color);
-}
+// .contact-list__link:hover,
+// .contact-list__link:focus {
+//     color:var(--accent-color);
+// }
 
 .contact-list__icon { 
     /* width: 16px;
@@ -33,13 +39,6 @@
     color:var(--primary-text-color)
 }
 
-/* .contact-list__tel { 
-    /* width: 16px;
-    height: 16px; */
-    /* padding: 0;
-    margin-right: 10px;
-    color:var(--primary-text-color)
-}  */ 
 
 .contact-list__link {
     display: flex;
@@ -50,8 +49,8 @@
     transition:color 250ms cubic-bezier(0.4,0,0.2,1), fill 250ms cubic-bezier(0.4,0,0.2,1) ;
 }
 
-.contact-list__link:hover,
-.contact-list__link:focus{
-    color: var(--accent-color);
-    fill: var(--accent-color);
-}
+// .contact-list__link:hover,
+// .contact-list__link:focus{
+//     color: var(--accent-color);
+//     fill: var(--accent-color);
+// }

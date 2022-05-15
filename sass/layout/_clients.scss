@@ -54,17 +54,27 @@
     transition-property: fill, border, box-sizing, border-radius;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.client__link:active,
-.client__link:hover,
-.client__link:focus{
+    &:active,
+    &:hover,
+    &:focus{
 
     fill: var(--accent-color);
     border: 1px solid var(--accent-color);
     box-sizing: border-box;
     border-radius: 4px;
+    }
 }
+
+// .client__link:active,
+// .client__link:hover,
+// .client__link:focus{
+
+//     fill: var(--accent-color);
+//     border: 1px solid var(--accent-color);
+//     box-sizing: border-box;
+//     border-radius: 4px;
+// }
 
 .client__item:not(:last-child){
     margin-right: 30px;
