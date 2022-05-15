@@ -73,14 +73,14 @@ img{
 
 
 /*Header*/
-.container.page-header{
+.container.header{
     display: flex;
     align-items: center;
     border-bottom: 1px solid #ECECEC;
 }
 
 /* Logo */
-.page-header{
+.header{
     /* padding-top: 24px;
     padding-bottom: 25px; */
     border-bottom: 1px solid #ECECEC; 
@@ -100,20 +100,20 @@ img{
 }
 
 /* Site nav */
-.nav-flex {
+.nav {
     display: flex;
     align-items: center;
 }
-.site-nav{
+.menu-list{
     display: flex;
     margin-left: 93px;
 }
 
-.site-nav .item + .item{
+.menu-list .item + .item{
     margin-left: 50px;
 }
 
-.site-nav .link-page{
+.menu-list__page{
     padding-top: 32px;
     padding-bottom: 32px;
     display: block;
@@ -128,12 +128,12 @@ img{
     transition:color 250ms cubic-bezier(0.4,0,0.2,1);
 }
 
-.site-nav .link-page:hover , 
-.site-nav .link-page:focus {
+.menu-list__page:hover , 
+.menu-list__page:focus {
     color: var(--accent-color);
 }
 
-.site-nav .link-current {
+.menu-list__current {
     position: relative; 
 
     padding-top: 32px;
@@ -143,7 +143,7 @@ img{
     font-weight: 500;
 }
 
-.link-current::after {
+.menu-list__current::after {
     content:'';
     display:block;
     position: absolute;
@@ -170,7 +170,7 @@ img{
     margin-right: 50px;
 }
 
-.contact {
+.contact-list__link {
     color: var( --primary-text-color);
 
     font-weight: 500;
@@ -182,12 +182,12 @@ img{
     transition: color 250ms cubic-bezier(0.4,0,0.2,1);
 }
 
-.contact:hover,
-.contact:focus {
+.contact-list__link:hover,
+.contact-list__link:focus {
     color:var(--accent-color);
 }
 
-.icon-head { 
+.contact-list__icon { 
     /* width: 16px;
     height: 16px; */
     padding: 0;
@@ -195,15 +195,15 @@ img{
     color:var(--primary-text-color)
 }
 
-.icon-head-tel { 
+/* .contact-list__tel { 
     /* width: 16px;
     height: 16px; */
     padding: 0;
     margin-right: 10px;
     color:var(--primary-text-color)
-} 
+}  */
 
-.contact-list .contact{
+.contact-list__link:{
     display: flex;
     align-items: center;
     color: var(--primary-text-color);
@@ -212,8 +212,8 @@ img{
     transition:color 250ms cubic-bezier(0.4,0,0.2,1), fill 250ms cubic-bezier(0.4,0,0.2,1) ;
 }
 
-.contact-list .contact:hover,
-.contact-list .contact:focus{
+.contact-list__link:hover,
+.contact-list__link:focus{
     color: var(--accent-color);
     fill: var(--accent-color);
 }
